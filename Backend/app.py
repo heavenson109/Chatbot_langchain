@@ -1,6 +1,6 @@
 import os
 from langchain.llms import OpenAI
-from langchain.memory import ConversationBufferMemory
+# from langchain.memory import ConversationBufferMemory
 from langchain.memory import ConversationSummaryBufferMemory
 from langchain.chains import ConversationChain
 
@@ -36,6 +36,7 @@ conversation = ConversationChain(
 )
 
 print(conversation.predict(input="what would be a good time for a coffee break?"))
+print("The conversation ended")
 
 
 
